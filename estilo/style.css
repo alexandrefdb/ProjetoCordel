@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Ms+Madi & display=swap');
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    background: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+}
+header > p{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--fonte1);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(61, 60, 60);
+    color: white;
+    box-shadow: inset 6px 10px 13px 0px rgba(0, 0, 0, 0.548);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    width: 400px;
+    background: rgba(0, 0, 0, 0.267);
+    font-size: large;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.397);
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02{
+    background: url('../imagens/background002.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
